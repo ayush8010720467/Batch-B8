@@ -1,0 +1,26 @@
+.timerDiv{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    border: 1px solid black;
+    position: relative;
+    font-size: 30px;
+}
+.timerbox{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+}
+.timerbox.start{
+    margin-top: -20px;
+}
+.timerbox.time{
+    margin-top: -56px;
+}
+.show{
+    display: block;
+}
+.hide{
+    display: none;
+}
