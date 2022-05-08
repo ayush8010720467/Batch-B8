@@ -1,18 +1,3 @@
-var count = 0;
-var counter = getElem("div", "counter", "counter");
-let subBtn = getElem("button", "btn", "sub", "-");
-let countText = getElem("span", "count", "count", count);
-let addBtn = getElem("button", "btn", "add", "+");
-counter.append(subBtn, countText, addBtn);
-document.getElementById("workable-area").append(counter);
-document.getElementById("add").addEventListener("click", () => {
-  count++;
-  document.getElementById("count").innerText = count;
-});
-document.getElementById("sub").addEventListener("click", () => {
-  count--;
-  document.getElementById("count").innerText = count;
-});
 function getElem(tag, css_class, id, innerText = "") {
   let elem = document.createElement(tag);
   elem.setAttribute("class", css_class);
@@ -20,3 +5,28 @@ function getElem(tag, css_class, id, innerText = "") {
   elem.innerText = innerText;
   return elem;
 }
+
+function generateCounterApp() {
+  var counterId = 0;
+  var workable_area = document.getElementById("workable-area");
+  console.log("Generate Counter App called");
+  return function () {
+    var count = 0;
+    let counter = getElem("div", "counter", "counter#" + counterId);
+    let subBtn = getElem("button", "btn", "sub#" + counterId, "-");
+    let countText = getElem("span", "count", "count#" + counterId, count);
+    let addBtn = getElem("button", "btn", "add#" + counterId, "+");
+    subBtn.addEventListener("click", () => {
+      count--;
+      countText.innerText = count;
+    });
+    addBtn.addEventListener("click", () => {
+      count++;
+      countText.innerText = count;
+    });
+    counter.append(subBtn, countText, addBtn);
+    workable_area.append(counter);
+    counterId++;
+  };
+}
+let genCount = generateCounterApp();

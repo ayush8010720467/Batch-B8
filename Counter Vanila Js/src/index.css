@@ -8,3 +8,15 @@
 .count {
   font-size: 20px;
 }
+.btn.add-counter {
+  margin: 10px;
+  border-radius: 50%;
+  font-size: 2vw;
+  padding: 0px 10px;
+}
+.counter {
+  display: inline-block;
+  padding: 20px;
+  border: 1px solid black;
+  margin: 30px;
+}
