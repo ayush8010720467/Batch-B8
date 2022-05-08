@@ -1,0 +1,10 @@
+.btn {
+  background-color: black;
+  color: white;
+  border: none;
+  margin: 0 10px;
+  font-size: 20px;
+}
+.count {
+  font-size: 20px;
+}
