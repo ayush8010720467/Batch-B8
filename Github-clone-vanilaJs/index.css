@@ -1,0 +1,43 @@
+.repoHeading {
+  color: #0969da;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.repo hr {
+  color: hsla(210, 18%, 87%, 1);
+}
+.repo-language-color {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border: 1px solid green;
+  background-color: green;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.repo-footer {
+  font-size: 12px !important;
+}
+.color-fg-muted {
+  color: #57606a;
+}
+.lang-span {
+  margin-right: 16px !important;
+}
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.positionIcons {
+  position: relative;
+  top: 4px;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.5;
+  font-size: 14px;
+}
