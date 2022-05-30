@@ -37,7 +37,6 @@ function getReps(user) {
 function getUrl(user) {
   return `https://api.github.com/users/${user}/repos`;
 }
-getReps(user);
 function getOneRepoElem(elem) {
   const divRepo = createElem("div", [["class", "repo"]]);
   const repoHeading = createElem(
@@ -92,4 +91,8 @@ function createElem(tag, attributes, innerText = "", innerHtml) {
     elem.innerHTML = innerHtml;
   }
   return elem;
+}
+function search() {
+  let inputUser = document.getElementById("userName");
+  getReps(inputUser.value);
 }
