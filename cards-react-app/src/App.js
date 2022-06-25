@@ -27,24 +27,54 @@ function App() {
         "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/ewulfgphspwjubsiv97y",
       heading: "Wow! Momo",
       desc: "Tibetan, Healthy Food, Asian, Chinese, Snacks, Continental, Desserts, Beverages",
+      rating: 1,
+      etd: "30 mins",
+      avgPrice: "100 for 2",
     },
     {
       imageUrl:
         "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/ewulfgphspwjubsiv97y",
       heading: "Burger King",
       desc: "American",
+      rating: 1,
+      etd: "30 mins",
+      avgPrice: "100 for 2",
     },
     {
       imageUrl:
         "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/ewulfgphspwjubsiv97y",
       heading: "Dominic Pizza",
       desc: "Pizzas, Italian",
+      rating: 1,
+      etd: "30 mins",
+      avgPrice: "100 for 2",
     },
     {
       imageUrl:
         "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/ewulfgphspwjubsiv97y",
       heading: "CHAUHAN DHABAo",
       desc: "Indian",
+      rating: 3,
+      etd: "30 mins",
+      avgPrice: "100 for 2",
+    },
+    {
+      imageUrl:
+        "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/ewulfgphspwjubsiv97y",
+      heading: "Wow! Momo",
+      desc: "Tibetan, Healthy Food, Asian, Chinese, Snacks, Continental, Desserts, Beverages",
+      rating: 4,
+      etd: "70 mins",
+      avgPrice: "100 for 2",
+    },
+    {
+      imageUrl:
+        "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/ewulfgphspwjubsiv97y",
+      heading: "Wow! Momo",
+      desc: "Tibetan, Healthy Food, Asian, Chinese, Snacks, Continental, Desserts, Beverages",
+      rating: 1,
+      etd: "30 mins",
+      avgPrice: "100 for 2",
     },
     {
       imageUrl:
@@ -57,18 +87,9 @@ function App() {
         "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/ewulfgphspwjubsiv97y",
       heading: "Wow! Momo",
       desc: "Tibetan, Healthy Food, Asian, Chinese, Snacks, Continental, Desserts, Beverages",
-    },
-    {
-      imageUrl:
-        "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/ewulfgphspwjubsiv97y",
-      heading: "Wow! Momo",
-      desc: "Tibetan, Healthy Food, Asian, Chinese, Snacks, Continental, Desserts, Beverages",
-    },
-    {
-      imageUrl:
-        "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/ewulfgphspwjubsiv97y",
-      heading: "Wow! Momo",
-      desc: "Tibetan, Healthy Food, Asian, Chinese, Snacks, Continental, Desserts, Beverages",
+      rating: 1,
+      etd: "30 mins",
+      avgPrice: "100 for 2",
     },
     {
       imageUrl:
@@ -101,7 +122,11 @@ function App() {
         imageUrl={elem.imageUrl}
         heading={elem.heading}
         desc={elem.desc}
+        rating={elem.rating ? elem.rating : null}
+        etd={elem.etd ? elem.etd : null}
+        avgPrice={elem.avgPrice ? elem.avgPrice : null}
         key={index}
+        index={index}
       />
     ));
   };
