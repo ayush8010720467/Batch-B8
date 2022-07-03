@@ -3,11 +3,11 @@
   width: 250px;
   background-color: greenyellow;
   border-radius: 50%;
-  /* margin: 50px; */
   display: flex;
   flex-direction: column;
   text-align: center;
   position: relative;
+  margin: 30px 30px;
 }
 .stopTimer,
 .pauseTimer,
