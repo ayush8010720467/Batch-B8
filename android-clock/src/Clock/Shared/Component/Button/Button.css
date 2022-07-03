@@ -1,0 +1,15 @@
+.alarm,
+.stopwatch,
+.countdown,
+.clock {
+  font-size: 50px;
+  width: 100%;
+}
+.btn {
+  background-color: white;
+  border: 1px solid black;
+}
+.btnSelect {
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
