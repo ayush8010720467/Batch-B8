@@ -1,0 +1,14 @@
+.container {
+  height: 450px;
+  width: 450px;
+  background-color: greenyellow;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0 37%;
+}

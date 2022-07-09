@@ -1,0 +1,19 @@
+.time {
+  font-size: 90px;
+}
+.date {
+  font-size: 30px;
+}
+.date,
+.time {
+  display: block;
+  width: 100%;
+}
+.details {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 170px;
+  width: 100%;
+}

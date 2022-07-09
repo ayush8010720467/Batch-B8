@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./Stopwatch.css";
 import GenericSpan from "./Components/GenericSpan";
 import { Start, Stop, Pause, Resume, Timer } from "./constants";
+import CircularDial from "../Shared/Component/CircularDial/CircularDial";
 
 function Stopwatch() {
   const [stopWatchState, setStopWatchState] = useState(0);
@@ -42,7 +43,7 @@ function Stopwatch() {
   };
   return (
     <>
-      <div className="container">
+      <CircularDial>
         {stopWatchState === 0 && (
           <GenericSpan
             type={Start.type}
@@ -108,7 +109,7 @@ function Stopwatch() {
             />
           </>
         )}
-      </div>
+      </CircularDial>
     </>
   );
 }

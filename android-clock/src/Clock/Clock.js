@@ -6,7 +6,7 @@ import Countdown from "./Countdown/Countdown";
 import WorldClock from "./WorldClock/WorldClock";
 import Stopwatch from "./Stopwatch/Stopwatch";
 function Clock() {
-  const [selected, setSelected] = useState(2);
+  const [selected, setSelected] = useState(3);
   return (
     <>
       <div className="clockContainer">
