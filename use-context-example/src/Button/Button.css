@@ -1,0 +1,32 @@
+/* .top-right{
+    position:absolute;
+    top: 0;
+    right: 0,
+} */
+.btn{border-radius: 10px;}
+.btn-primary{
+    background-color: blanchedalmond;
+    border: 1px solid black;
+}
+.btn-sec{
+    background-color: white;
+    border: 1px solid black;
+}
+.m-30{
+    margin: 30px;
+}
+.f-b{
+    font-size: 50px;
+}
+.f-m{
+    font-size: 25px;
+}
+.btn-save{
+    background-color: green;
+}
+.btn-close{
+background-color: red;
+}
+.m-r-30{
+    margin-right: 30px;
+}

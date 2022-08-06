@@ -1,0 +1,15 @@
+.lable{
+    margin: 0 20px;
+}
+.setting-page-footer{
+    margin: 30px
+}
+.input-body{
+    font-size: 30px;
+}
+.setting-page{
+    width: 450px;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: inline-block;
+}
